@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de animais</title>
+    <link href="style2.css" type="text/css" rel="stylesheet"/>
+</head>
+
+<body>
+    <header>
+        <div id="banner">
+            <h1>Cadastramento de Vacas Leiteiras</h1>
+            <img src="vaca.jpg" alt="desenho vaca" width="250" height="212">
+            <p><strong>Aplicativo destinado para cadastramento e monitoramento das vacas leiteiras. <br/> Fazenda da proprietária Lúcia.</strong></p>
+        </div>
+
+        <div id="nav">
+
+            <nav>
+                
+                     <a href="#objetivo">Objetivo</a>
+                     <a href="#ordenha">Ordenha</a>
+                     <a href="#contato">Contato</a>
+
+            </nav>
+           </div>
+    </header>
+
+    <main>
+        <section class="classe1">
+        <section id="objetivo">
+            <h3><b>OBJETIVO</b></h3>
+            <P>Cadastro das vacas da fazenda e monitoramento das possíveis doenças existentes.</P>
+
+            <article>
+                <h3>CADASTRO</h3>
+                <P>Por favor insira os dados para cadastrar o animal no sistema.<BR/>Nome do animal e identificação (rg) está descrito na coleira.</P>
+                <form action="PROCESSA.PHP" method="POST">
+                    <input type="text" name="text1" placeholder="Nome do Animal">
+                    <input type="text" name="text1" placeholder="Identificação ">
+
+                    <select name="Selecionar raça Animal">
+                        <option value="1">Raça Holandesa</option>
+                        <option value="2">Raça Jersey</option>
+                        <option value="3">Raça Pardo Suiço</option>
+                        <option value="4">Raças Zebu Leiteiras</option>
+                        <option value="5">Guzerá</option>
+                        <option value="6">Sindi </option>
+                        
+                        <input type="radio" name="radio1" value="1">Doente
+                        <input type="radio" name="radio1" value="2">Produzindo Leite
+                        <input type="text" name="text1" placeholder="Diagnóstico">
+                        <p>Em caso de doença, qual o tratamento ultilizado? 
+                            <input type="text" name="text1" placeholder="Tratamento"> 
+                        </p>
+                        <p>Quantos dias de tratamento?
+                            <select name="dias de tratamento">
+                                <option value="0">Nenhum</option>
+                                <option value="1">1 dia</option>
+                                <option value="2">2 dias</option>
+                                <option value="3">3 dias</option>
+                                <option value="4">4 dias</option>
+                                <option value="5">5 dias</option>
+                                <option value="6">6 dias</option>
+                                <option value="7">7 dias</option>
+                                <option value="8">8 dias</option>
+                                <option value="9">9 dias</option>
+                                <option value="10">10 dias</option>
+                                <option value="11">11 dias</option>
+                                <option value="12">12 dias</option>
+                                <option value="13">13 dias</option>
+                                <option value="14">14 dias</option>
+                                <option value="15">15 dias</option>
+                                <option value="16">16 dias</option>
+                                <option value="17">17 dias</option>
+                                <option value="18">18 dias</option>
+                                <option value="19">19 dias</option>
+                                <option value="20">20 dias</option>
+                        </p>
+
+                        <input type="submit" value='Salvar'/>
+                        
+                    </select>
+
+                </form>
+                
+
+            </article>
+        </section>
+        </section>
+
+        <section class="classe1">
+        <section id="ordenha">
+            <article>
+            <h3>ORDENHA</h3>
+            <form action="PROCESSA.PHP" method="POST">
+                <input type="text" name="text1" placeholder="Identificação do animal ">
+                <P>Ordenha?<input type="radio" name="radio1" value="1">SIM
+                           <input type="radio" name="radio1" value="2">NÃO
+                </P>
+                <P>Caso sim, qual a data e horário da ordenha? <input type="date"> <input type="time"></P>
+                <P>Nome do funcionário que realizou a ordenha.</P>
+                <input type="text" name="text2" placeholder="Nome do Funcionário">
+                <P>Quantos litros ordenhados?</P>
+                <input type="text" name="text3" placeholder="Leite em Litros">
+                <P><input type="submit" value='Salvar'/></P>
+
+
+
+            </article>
+        </section>
+        </section>
+
+        <section class="classe1"></section>
+        <section id="contato">
+            <h3>CONTATO</h3>
+            <address>
+                Avenida Brasil, 3456<br>
+                Cep: 13046532 , São Paulo<br>
+                <img src="linkedin.png" alt="logo linkedin" width="20" height="20">
+                <a href="https:br.linkedin.com" target="_blank">linkedin Lúcia</a><br>
+                <img src="pngwing.com.png" alt="logo whatsapp" width="20" height="20">
+                <a href="https://api.whatsapp.com/send?phone=15551234567" target="_blank">WHATSAPP LÚCIA</a><br>
+            </address>
+        </section>
+        </section>
+
+    </main>
+</body>
+</html>
